@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  color: white;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.container {
+  background: white;
+  width: 380px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+#login-box, #task-box {
+  margin-top: 3px;
+}
+
+h3 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+input {
+  width: 90%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+button {
+  margin-top: 12px;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  opacity: 0.9;
+  transform: scale(1.03);
+}
+
+#msg {
+  margin-top: 12px;
+  font-weight: 500;
+  color: green;
+}
+
+.tasks-container {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.task-card {
+  background: #f9f9ff;
+  color: #333;
+  padding: 12px 14px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  text-align: left;
+}
+
+.task-title {
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.task-desc {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 6px;
+}
+
+.task-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.status {
+  padding: 2px 8px;
+  border-radius: 12px;
+  background-color: #ffd6d6;
+  color: #b00020;
+  font-weight: 600;
+}
+
+.task-card {
+  background: white;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.task-card h4 {
+  margin: 0;
+}
+
+.task-card button {
+  margin-top: 10px;
+}
+
+.done {
+  color: green;
+  font-weight: bold;
+}
+
+.complete-btn {
+  margin-top: 10px;
+  padding: 6px 12px;
+  background: #4caf50;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.complete-btn:hover {
+  background: #3d8f40;
+}
+
+.status.done {
+  color: #4caf50;
+  font-weight: bold;
+}

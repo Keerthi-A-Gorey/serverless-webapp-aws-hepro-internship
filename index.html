@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>Task Tracker</h2>
+
+    <!-- LOGIN SECTION -->
+    <div id="login-box">
+      <h3>Login</h3>
+      <button onclick="login()">Login with Cognito</button>
+    </div>
+
+    <!-- TASK SECTION -->
+    <div id="task-box" style="display:none;">
+  <h3>Create Task</h3>
+
+  <input type="text" id="taskName" placeholder="Task Name">
+  <input type="text" id="desc" placeholder="Description">
+
+  <div class="btn-group">
+    <button onclick="createTask()">Create Task</button>
+    <button onclick="getTasks()">View Tasks</button>
+  </div>
+
+  <p id="msg"></p>
+
+  <div id="tasks-container" class="tasks-container"></div>
+</div>
+
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
